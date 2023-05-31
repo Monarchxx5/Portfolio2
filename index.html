@@ -1,45 +1,413 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Title</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a> 
-        <!-- change logo -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-          <ul class="navbar-nav text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
-            </li>
-          </ul>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevGurus</title>
+  <link rel="shortcut icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm custom-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand custom-navlink menu1" href="#home"><img src="Images/logo.png" class="logo">
+        <span>Dev</span><span class="gurus text-white">Gurus</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon text-white">≡</span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link custom-navlink" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-navlink" href="#aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-navlink" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-navlink" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-navlink" href="#contacts">Contacts</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    
-    <!-- Home -->
+    </div>
+  </nav>
+  
+  <!-- Home -->
+  <section class="container-fluid pt-5" id="home">
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-sm-6 col-12 text-white text-center d-flex justify-content-center align-content-center">
+              <div class="text">
+                <h1>Welcome to <span>Dev</span>Gurus</h1>
+                <h4>Transforming Ideas into Captivating Websites.</h4>
+                <hr>
+                <p>Let's embark on a journey of innovation and growth together. Contact us today and let DevGuru be your trusted partner in the digital realm.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+                <img src="Images/logo.png" alt="Logo Pic" class="responsive-image">
+            </div>
+        </div>
+    </div>
+  </section>
 
+  <!-- Services -->
+  <section id="services">
+      <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0 text-secondary">What We Offer</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-gem fs-1"></i></div>
+                    <h3 class="h4 mb-2">Sturdy Themes</h3>
+                    <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-laptop fs-1"></i></div>
+                    <h3 class="h4 mb-2">Up to Date</h3>
+                    <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-globe fs-1"></i></div>
+                    <h3 class="h4 mb-2">Ready to Publish</h3>
+                    <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-heart fs-1"></i></div>
+                    <h3 class="h4 mb-2">Made with Love</h3>
+                    <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <!-- AboutUs -->
+  <section id="aboutus">
+   <div class="container">
+    <h2 class="text-center mt-0 text-white">Our Team</h2>
+    <hr class="divider border border-blue" />
+    <div id="team-carousel" class="carousel slide">
+      <!-- Jefferson Profile -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <img src="Images/jepjep.jpg" class="card-img-top" alt="Senior Developer 1">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Jefferson Harbay</h5>
+                <h6>Senior Web Developer</h6>
+                <p class="card-text">"Crafting digital experiences, one line of code at a time."</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jefferson">
+                    View Profile
+                  </button>
+                  <div class="modal fade" id="jefferson">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Profile</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                          <br>
+                          Highly skilled and results-driven Senior Web Developer with [number] years of experience in developing and managing complex web applications. Equipped with a solid understanding of the full web development lifecycle and a proven track record of delivering high-quality projects on time and within budget. Adept at collaborating with cross-functional teams, including designers and project managers, to develop innovative and user-friendly websites. Possess a deep knowledge of front-end and back-end technologies, as well as industry best practices, and a passion for staying up to date with emerging trends and technologies in the web development field.<br><br>
+
+                          <span>Key Skills:</span><br><br>
+                          <ol>
+                          <li>Full-stack Web Development: Proficient in both front-end and back-end development, leveraging HTML5, CSS3, JavaScript, and popular frameworks like React.js, Angular, and Vue.js for front-end development, and utilizing Node.js, Express.js, and PHP for server-side programming.</li>
+
+                          <li> Responsive Web Design: Expertise in creating responsive and mobile-friendly web applications that provide seamless user experiences across various devices and screen sizes.
+                          </li>
+                          <li> Database Management: Strong understanding of database concepts and experience working with relational databases like MySQL, PostgreSQL, and MongoDB. Skilled in writing efficient queries and optimizing database performance.
+                          </li>
+                          <li>Web Performance Optimization: Proven ability to optimize website performance through techniques like minification, caching, lazy loading, and CDN integration to ensure fast and efficient loading times.
+                          </li>
+                          </ol><br>
+                          <span>Experience:</span>
+                          <br>
+                          Mobile Legends Inc., Mobile Legends World<br>
+                          Senior Web Developer, [2023 - Present]<br>
+                          
+                          Led a team of developers in designing and developing multiple high-traffic websites, resulting in improved user engagement and conversion rates.
+                          Collaborated closely with designers to create visually appealing and intuitive user interfaces using modern front-end frameworks.
+                          Implemented robust back-end systems, including database design and API development, to ensure efficient data management and smooth integration with third-party services.
+                          Conducted regular code reviews and implemented best practices to maintain code quality, scalability, and security.
+                          Actively participated in project planning and estimation, providing technical expertise and contributing to the successful delivery of projects within deadlines.
+                          <br><br>
+                          <span>Education:</span>
+                          <br><br>
+                          Bachelor's Degree in Information Technology, [Cordova Public College], [2005]
+                          <br><br>
+                          <span>Languages:</span>
+                          <br>
+                          English (Fluent)<br>
+                          Polish (Fluent)<br>
+                          Korean  (Fluent)<br>
+                          Filipino (Fluent)<br>
+                          <br>
+                          With a strong technical skill set, extensive experience in web development, and a proven track record of delivering successful projects, I am dedicated to creating innovative and user-centric web solutions. I thrive in collaborative environments and enjoy taking on challenging projects that push the boundaries of web development. As a Senior Web Developer, I am committed to delivering exceptional results and exceeding client expectations.
+                        </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- Ashley Profile -->
+          <div class="carousel-item">
+            <div class="card">
+              <img src="Images/ashley.jpg" class="card-img-top" alt="Senior Developer 2">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Ashley Shane Tajanlangit</h5>
+                <h6>Senior Web Developer</h6>
+                <p class="card-text">"Unleashing creativity and innovation through the eyes of a web goddess."</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ashley">
+                  View Profile
+                </button>
+                <div class="modal fade" id="ashley">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title text-center">Profile</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          <br>
+                          Highly skilled and accomplished Female Senior Web Developer with [number] years of experience in developing and managing complex web applications. Demonstrated expertise in the full web development lifecycle, including requirements gathering, design, development, testing, and deployment. Proven ability to lead and mentor cross-functional teams, collaborating effectively with designers, project managers, and stakeholders to deliver exceptional web solutions. Adept at staying current with the latest web technologies and trends, and passionate about creating user-centric and visually appealing websites.<br><br>
+
+                          <span>Key Skills:</span><br><br>
+                          <ol>
+                          <li>Full-stack Web Development: Proficient in both front-end and back-end development, leveraging HTML5, CSS3, JavaScript, and popular frameworks like React.js, Angular, and Vue.js for front-end development, and utilizing Node.js, Express.js, and PHP for server-side programming.</li>
+
+                          <li>Responsive Web Design: Expertise in creating responsive and mobile-friendly web applications that provide seamless user experiences across various devices and screen sizes.
+                          </li>
+                          <li>Database Management: Strong understanding of database concepts and experience working with relational databases like MySQL, PostgreSQL, and MongoDB. Skilled in writing efficient queries and optimizing database performance.
+                          </li>
+                          <li>Web Performance Optimization: Proven ability to optimize website performance through techniques like minification, caching, lazy loading, and CDN integration to ensure fast and efficient loading times.
+                          </li>
+                          </ol><br>
+                          <span>Experience:</span>
+                          <br>
+                          Google Inc., US Texas<br>
+                          Senior Web Developer, [2022 - Present]<br>
+                          
+                          Led a team of developers in designing and developing multiple high-traffic websites, resulting in improved user engagement and conversion rates.
+                          Collaborated closely with designers to create visually appealing and intuitive user interfaces using modern front-end frameworks.
+                          Implemented robust back-end systems, including database design and API development, to ensure efficient data management and smooth integration with third-party services.
+                          Conducted regular code reviews and implemented best practices to maintain code quality, scalability, and security.
+                          Actively participated in project planning and estimation, providing technical expertise and contributing to the successful delivery of projects within deadlines.
+                          <br>
+                          <span>Education:</span>
+                          <br>
+                          Bachelor's Degree in Information Technology, [Cordova Public College], [2005]
+                          <br>
+                          <span>Languages:</span>
+                          <br>
+                          English (Fluent)<br>
+                          British (Fluent)<br>
+                          French  (Fluent)<br>
+                          Filipino (Fluent)<br>
+                          <br>
+                          As a Female Senior Web Developer, I am dedicated to creating innovative web solutions that empower businesses and engage users. I thrive in collaborative environments, leveraging my technical expertise and leadership skills to deliver exceptional results. With a passion for continuous learning and a commitment to excellence, I am prepared to tackle complex web development challenges and drive the success of projects.
+                        </p>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Clint Profile -->
+          <div class="carousel-item">
+            <div class="card">
+              <img src="Images/jalan.jpg" class="card-img-top" alt="Junior Developer">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Clint John Tajanlangit</h5>
+                <h6>Junior Web Developer</h6>
+                <p class="card-text">"Embracing the journey of code and growth as a junior coding maestro."</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clint">
+                  View Profile
+                </button>
+                <div class="modal" id="clint">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title text-center">Profile</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          <br>
+                          Motivated and enthusiastic Junior Web Developer with a strong foundation in web development principles and a passion for creating impactful websites. Proficient in front-end technologies, including HTML5, CSS3, and JavaScript, and familiar with popular frameworks such as React.js and Vue.js. Eager to contribute to collaborative projects and expand knowledge in back-end development and database management. Committed to staying up to date with industry trends and best practices to deliver high-quality web solutions.<br><br>
+
+                          <span>Key Skills:</span><br><br>
+                          <ol>
+                          <li>Front-End Development: Proficient in HTML5, CSS3, and JavaScript, with experience in building responsive and visually appealing websites. Knowledge of front-end frameworks like React.js and Vue.js.</li>
+
+                          <li> Web Design: Understanding of design principles and the ability to translate design concepts into functional web interfaces. Familiarity with design tools such as Adobe Photoshop and Sketch.
+                          </li>
+                          <li> Collaboration: Excellent teamwork and communication skills. Capable of effectively working in cross-functional teams, collaborating with designers and other developers to deliver projects on time.
+                          </li>
+                          <li>Web Performance Optimization: Proven ability to optimize website performance through techniques like minification, caching, lazy loading, and CDN integration to ensure fast and efficient loading times.
+                          </li>
+                          </ol><br>
+                          <span>Experience:</span>
+                          <br>
+                          New World Inc., Xuanhuan China<br>
+                          Junior Web Developer, [2023 - Present]<br>
+                          
+                          Led a team of developers in designing and developing multiple high-traffic websites, resulting in improved user engagement and conversion rates.
+                          Collaborated closely with designers to create visually appealing and intuitive user interfaces using modern front-end frameworks.
+                          Implemented robust back-end systems, including database design and API development, to ensure efficient data management and smooth integration with third-party services.
+                          Conducted regular code reviews and implemented best practices to maintain code quality, scalability, and security.
+                          Actively participated in project planning and estimation, providing technical expertise and contributing to the successful delivery of projects within deadlines.
+                          <br>
+                          <span>Education:</span>
+                          <br>
+                          Bachelor's Degree in Information Technology, [Cordova Public College], [2012]
+                          <br>
+                          <span>Languages:</span>
+                          <br>
+                          English (Fluent)<br>
+                          Japnese (Fluent)<br>
+                          Chinese  (Fluent)<br>
+                          Filipino (Fluent)<br>
+                          <br>
+                          With a strong technical skill set, extensive experience in web development, and a proven track record of delivering successful projects, I am dedicated to creating innovative and user-centric web solutions. I thrive in collaborative environments and enjoy taking on challenging projects that push the boundaries of web development. As a Senior Web Developer, I am committed to delivering exceptional results and exceeding client expectations.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#team-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#team-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+        <h2 class="text-center mt-0 text-secondary">Projects</h2>
+        <hr class="divider"/>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/periodic.png" class="project-images mx-auto d-block" alt="Periodic Table Image">
+                <a href="periodic.html" class="btn btn-primary">Periodic Table Project</a>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/survey.png" class="project-images mx-auto d-block" alt="Survey Form Image">
+                <a href="survey.html" class="btn btn-primary">Survey Form Project</a>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/bsactivity.png" class="project-images mx-auto d-block" alt="Bootstrap Activty Image">
+                <a href="bsactivity.html" class="btn btn-primary">Simple Bootstrap Activity</a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+<section id="contacts">
+    <div class="container-fluid">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="company">Company Name:</label>
+          <input type="text" id="company" name="company" placeholder="Enter your company name">
+        </div>
+        <div class="form-group">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-5 mb-lg-0">
+                    <p class="lead mb-0">
+                        We appreciate your time and interest in our website. Thank you for visiting and we hope to see you again soon!
+                    </p>
+                </div>
+                <div class="col-lg-4 col-12 mb-5 mb-lg-0">
+                    <h4 class="mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/profile.php?id=100092991469216"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    </div>
+                <div class="col-lg-4 col-12 mb-5 mb-lg-0">
+                    <h4 class="mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Brgy. Gabi Cordova
+                        <br />
+                        Cebu, 6017
+                    </p>
+                </div>
+            </div>
+          </div>
+    </div>  
+    </footer>
+</section>
+<div class="copyright bg-secondary text-center text-white">
+  <div class="container-fluid "><small>Copyright &copy; <span>Dev</span>Gurus 2023</small></div>
+</div>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+</body>
+</html>
