@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+.custom-navbar {
+    background-color: #8e54ff;
+  }
+  .logo{
+    height: 45px;
+    width: auto;
+  }
+  .navbar span {
+    color: #000000ec;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #inputs
+  {
+    background-color: purple;
+    border-bottom: 3px solid darkgray;
+  }
+.title
+ {
+    text-align: center;
+ }
+ .card {
+    position: relative;
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+    box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+}
+
+.card .card-body {
+    padding: 1rem 1rem
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+p {
+    font-size: 14px
+}
+
+h4 {
+    margin-top: 18px
+}
+
+.cross {
+    padding: 10px;
+    color: #4CAF50;
+    cursor: pointer
+}

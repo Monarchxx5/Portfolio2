@@ -1,0 +1,14 @@
+.navbar-brand img
+{
+    height: 45px;
+    width: auto;
+}
+.card img
+{
+    height: 250px;
+    width: auto;   
+}
+.card
+{
+    border: none;
+}
